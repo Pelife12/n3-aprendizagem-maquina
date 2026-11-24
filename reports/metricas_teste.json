@@ -1,0 +1,64 @@
+{
+  "periodo": [
+    "2025-01-01",
+    "2026-11-16"
+  ],
+  "dias": 685,
+  "modelo": "HistGradientBoosting",
+  "cobertura_faixa_80": 0.8453,
+  "metricas": {
+    "Persistência (amanhã = hoje)": {
+      "mae": 2.4545,
+      "rmse": 3.2189,
+      "r2": 0.4896,
+      "erro_ate_2c": 0.5255,
+      "erro_max": 16.2
+    },
+    "Climatologia (média da época)": {
+      "mae": 2.7048,
+      "rmse": 3.3601,
+      "r2": 0.4438,
+      "erro_ate_2c": 0.4453,
+      "erro_max": 10.4729
+    },
+    "HistGradientBoosting": {
+      "mae": 1.8221,
+      "rmse": 2.325,
+      "r2": 0.7337,
+      "erro_ate_2c": 0.6131,
+      "erro_max": 9.2428
+    }
+  },
+  "por_mudanca_de_temperatura": [
+    {
+      "mudanca_real": "queda > 5 °C",
+      "dias": "50",
+      "mae_modelo": "3.536",
+      "mae_persistencia": "7.088"
+    },
+    {
+      "mudanca_real": "queda 2–5 °C",
+      "dias": "107",
+      "mae_modelo": "2.254",
+      "mae_persistencia": "3.34"
+    },
+    {
+      "mudanca_real": "estável (±2 °C)",
+      "dias": "355",
+      "mae_modelo": "1.364",
+      "mae_persistencia": "0.957"
+    },
+    {
+      "mudanca_real": "alta 2–5 °C",
+      "dias": "150",
+      "mae_modelo": "1.776",
+      "mae_persistencia": "3.239"
+    },
+    {
+      "mudanca_real": "alta > 5 °C",
+      "dias": "23",
+      "mae_modelo": "3.464",
+      "mae_persistencia": "6.257"
+    }
+  ]
+}
