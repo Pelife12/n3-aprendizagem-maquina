@@ -1,0 +1,97 @@
+{
+  "escolhido": "HistGradientBoosting · todos",
+  "faixa_80": [
+    -2.934958536676227,
+    3.56842850144141
+  ],
+  "atributos_eleitos_votacao": [
+    "tmed",
+    "dia_ano_cos",
+    "tmin",
+    "vento_dir_cos",
+    "radiacao",
+    "tmax",
+    "evapotranspiracao"
+  ],
+  "parametros": {
+    "categorical_features": "from_dtype",
+    "early_stopping": "auto",
+    "interaction_cst": "None",
+    "l2_regularization": "1.0",
+    "learning_rate": "0.03",
+    "loss": "squared_error",
+    "max_bins": "255",
+    "max_depth": "None",
+    "max_features": "1.0",
+    "max_iter": "300",
+    "max_leaf_nodes": "15",
+    "min_samples_leaf": "20",
+    "monotonic_cst": "None",
+    "n_iter_no_change": "10",
+    "quantile": "None",
+    "random_state": "42",
+    "scoring": "loss",
+    "tol": "1e-07",
+    "validation_fraction": "0.1",
+    "verbose": "0",
+    "warm_start": "False"
+  },
+  "validacao": {
+    "HistGradientBoosting · todos": {
+      "mae": 1.9888,
+      "rmse": 2.6002,
+      "r2": 0.6663,
+      "erro_ate_2c": 0.6101,
+      "erro_max": 9.2613
+    },
+    "Ridge · todos": {
+      "mae": 2.0686,
+      "rmse": 2.657,
+      "r2": 0.6515,
+      "erro_ate_2c": 0.5718,
+      "erro_max": 9.4598
+    },
+    "Random Forest · todos": {
+      "mae": 2.0701,
+      "rmse": 2.6787,
+      "r2": 0.6458,
+      "erro_ate_2c": 0.5869,
+      "erro_max": 9.512
+    },
+    "HistGradientBoosting · votação": {
+      "mae": 2.2516,
+      "rmse": 2.8913,
+      "r2": 0.5874,
+      "erro_ate_2c": 0.5445,
+      "erro_max": 9.1403
+    },
+    "Random Forest · votação": {
+      "mae": 2.254,
+      "rmse": 2.8792,
+      "r2": 0.5908,
+      "erro_ate_2c": 0.5431,
+      "erro_max": 9.2079
+    },
+    "Ridge · votação": {
+      "mae": 2.2675,
+      "rmse": 2.8822,
+      "r2": 0.59,
+      "erro_ate_2c": 0.5294,
+      "erro_max": 9.6877
+    },
+    "Persistência (amanhã = hoje)": {
+      "mae": 2.7688,
+      "rmse": 3.656,
+      "r2": 0.3403,
+      "erro_ate_2c": 0.4856,
+      "erro_max": 14.2
+    },
+    "Climatologia (média da época)": {
+      "mae": 3.1885,
+      "rmse": 3.945,
+      "r2": 0.2318,
+      "erro_ate_2c": 0.3666,
+      "erro_max": 11.7815
+    }
+  }
+}
